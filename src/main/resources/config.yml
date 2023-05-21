@@ -1,0 +1,120 @@
+sql: '%plugin%/case.db'
+data: '%plugin%/data.yml' #%plugin%
+mysql:
+  ip: localhost
+  port: 3306
+  username: root
+  password: ""
+  database: test
+prizes:
+  title1: '&a&lFIRST,a,95:5,title:1,false'
+  title2: '&e&lSPECIAL,e,95:4,title:2,false'
+  title3: '&6&lLIMITED,6,95:1,title:3,false'
+  title4: '&c&lBLOCKED,c,95:6,title:4,false'
+  title5: '&d&lBYADMIN,d,95:2,title:5,false'
+  title6: '&b&lСЛУЧАЙНЫЙ,b,95:3,title:random,false'
+  donate1: '&9&lVIP,9,251:11,donate:vip,true'
+  donate2: '&5&lPREMIUM,5,251:10,donate:premium,true'
+  donate3: '&d&lELITE,d,251:2,donate:elite,true'
+  donate4: '&e&lHERO,e,251:4,donate:hero,true'
+  donate5: '&3&lLORD,3,251:9,donate:lord,true'
+  donate6: '&6&lLEGEND,6,251:1,donate:legend,true'
+  donate7: '&a&lULTRA,a,251:5,donate:ultra,true'
+  donate8: '&b&lSPONSOR,b,251:3,donate:sponsor,true'
+  donate9: '&c&lTITAN,c,251:6,donate:titan,true'
+  coins1: '&c&l5,c,95:14,coins:5,true'
+  coins2: '&c&l10,c,35:14,coins:10,true'
+  coins3: '&c&l15,c,159:14,coins:15,true'
+  coins4: '&c&l30,c,233,coins:30,true'
+  coins5: '&c&l50,c,249,coins:50,true'
+  coins6: '&c&l100,c,152,coins:100,true'
+command:
+  donate: 'don give %player% %prize%'
+  title: 'titles give %player% %prize%'
+  coins: 'seco give %player% %prize%'
+format:
+  donate: 'донат %name%'
+  title: 'титул %name%'
+  coins: '&c&l%name%&c рубинов'
+cases:
+  rubins:
+    title: '&0&lКейсы ⎱ &8&lРубины'
+    name: 'Кейс &7&lRUBIN'
+    locations:
+      - 'spawn,95,78,8'
+    axis: x
+    block: 130
+    aura: c
+    holo:
+      - ''
+      - ''
+      - '&7&l КЕЙС С &c&lРУБИНАМИ'
+      - '&7Игровая рулетка'
+      - '&c▣'
+      - ''
+      - '&fВыпадают рубины.'
+      - '&fПокупка на &cFixMine.me'
+      - ''
+      - '&7Открой кейс'
+    prizes:
+      coins1: 2
+      coins2: 3
+      coins3: 4
+      coins4: 4
+      coins5: 2
+      coins6: 1
+  title:
+    title: '&0&lКейсы ⎱ &8&lТитулы'
+    name: 'Кейс &7&lTITLE'
+    locations:
+      - 'spawn,95,78,6'
+    axis: x
+    block: 130
+    aura: 6
+    holo:
+      - ''
+      - ''
+      - '&7&l КЕЙС С &6&lТИТУЛАМИ'
+      - '&7Игровая рулетка'
+      - '&6ൠ'
+      - ''
+      - '&fВыпадает случайный титул.'
+      - '&fПокупка на &6FixMine.me'
+      - ''
+      - '&7Открой кейс'
+    prizes:
+      title1: 1
+      title2: 2
+      title3: 4
+      title4: 2
+      title5: 1
+      title6: 2
+  donate:
+    title: '&0&lКейсы ⎱ &8&lДонаты'
+    name: 'Кейс &7&lDONATE'
+    locations:
+      - 'spawn,95,78,10'
+    axis: x
+    block: 130
+    aura: e
+    holo:
+      - ''
+      - ''
+      - '&7&l КЕЙС С &e&lДОНАТОМ'
+      - '&7Игровая рулетка'
+      - '&e❏'
+      - ''
+      - '&fВыпадает любой донат.'
+      - '&fПокупка на &eFixMine.me'
+      - ''
+      - '&7Открой кейс'
+    prizes:
+      donate1: 5    # 15
+      donate2: 10    # 49
+      donate3: 10   # 120
+      donate4: 2   # 249
+      donate5: 1    # 450
+      donate6: 0    # 799
+      donate7: 0    # 1200
+      donate8: 0    # 1799
+      donate9: 0    # 2500

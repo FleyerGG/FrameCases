@@ -1,0 +1,9 @@
+name: FrameCases
+version: '${project.version}'
+main: ru.fleyer.framecases.FrameCases
+authors: [ Fleyer001 ]
+description: plugin cases
+commands:
+  case:
+    aliases:
+      - dc
